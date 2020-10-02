@@ -6,6 +6,24 @@ Install Docker on Ubuntu:
 	>> In google type get.docker.com
 	>> curl -fsSL https://get.docker.com -o get-docker.sh
 	>> sh get-docker.sh (docker key will install)  ==> docker ps (to check running stage container)
+	>> to install docker container run below command . Note:  tomcat not available by default. But this command will download tomcat image, on top of it ,container is                   created. 
+	    docker run --name mytomcl -d -p 8080:8080 tomcat
+        >> to list a image and container respectively , run below command
+	    docker images
+	    
+	    docker ps
+	    
+	>> Container can be accessed over an internet using public IP
+	
+	>> To delete container run below command
+	  
+	   docker rm mytomcl -f
+	   
+	>> To delete image
+	
+	   docker rmi tomcat
+	   
+	   
 	
 	sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
