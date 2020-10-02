@@ -23,6 +23,7 @@ Docker Containers
 	docker run --name myjenkisc1 -d -p 8082:8080 jenkins [ jenkins]
 	docker ps      # list the running containers 
 	docker ps -a   # list running + exited containers
+	docker ps -a -q # list only Container id ,not full details
 	docker inspect # inspect a container
 	docker stop|start|restart   # stop/start/restart a container 
 	docker rm / docker rm -f    # remove the containers from the server
