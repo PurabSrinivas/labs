@@ -18,8 +18,9 @@ Docker Containers
 	docker pull <image name>   # pull image from docker hub
 	e.g docker pull ngnix
 	docker images  # list the images in local
-	docker run (interactive / detached ) # run a container from an image
+	docker run (interactive / detached ) # run a container from an image  ==> search + pull + create 
 	e.g docker run -d -p 8080:80 ngnix [ ngnix is a web server , its image port number 80]
+	docker run --name myjenkisc1 -d -p 8082:8080 jenkins [ jenkins]
 	docker ps      # list the running containers 
 	docker ps -a   # list running + exited containers
 	docker inspect # inspect a container
