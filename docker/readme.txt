@@ -1,10 +1,25 @@
+Topics on Docker :
+
+a. What is a docker and it's purpose ?
+b. How to install a docker ?
+c. How to create the container ?
+d. Docker life cycle ?
+e. How docker container working ?
+f. Docker compose
+g. Docker file
+h. Docker network
+i. Docker volumes
+
+
 Docker Cheat Sheet:
 
 Docker Containers
 	docker search  # search the images in docker hub
-	docker pull    # pull image from docker hub
+	docker pull <image name>   # pull image from docker hub
+	e.g docker pull ngnix
 	docker images  # list the images in local
 	docker run (interactive / detached ) # run a container from an image
+	e.g docker run -d -p 8080:80 ngnix [ ngnix is a web server , its image port number 80]
 	docker ps      # list the running containers 
 	docker ps -a   # list running + exited containers
 	docker inspect # inspect a container
